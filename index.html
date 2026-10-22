@@ -1,228 +1,148 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tech na Laje - Institucional</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/dracula.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <style>
-      :root {
-        --ink: #f5f3ed;
-        --muted: #c3c5ca;
-        --lime: #d2fa68;
-        --panel: rgba(14, 17, 23, 0.86);
-      }
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Tech na Laje - Pitch Deck</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css" id="theme">
+  <style>
+    .reveal h1, .reveal h2, .reveal h3 { color: #f2f2f2; text-transform: none; }
+    .highlight { color: #ff5722; }
+    .team-member { font-size: 0.7em; text-align: left; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
 
-      body {
-        background: #101319;
-      }
+      <!-- Slide 1 -->
+      <section>
+        <h1>Tech na Laje</h1>
+        <p class="highlight">Intro & Pitch</p>
+      </section>
 
-      .reveal {
-        color: var(--ink);
-        font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
-      }
-
-      .reveal h1,
-      .reveal h2 {
-        color: var(--ink);
-        font-family: "Avenir Next", Avenir, "Segoe UI", sans-serif;
-        font-weight: 800;
-        letter-spacing: 0;
-        text-transform: none;
-      }
-
-      .reveal h1 {
-        font-size: 2.25em;
-        line-height: 1;
-      }
-
-      .reveal h2 {
-        color: var(--lime);
-        font-size: 1.4em;
-        margin-bottom: 0.55em;
-      }
-
-      .reveal p,
-      .reveal li {
-        color: var(--muted);
-        font-size: 0.68em;
-        line-height: 1.5;
-      }
-
-      .reveal .slides section {
-        box-sizing: border-box;
-        padding: 0.55em;
-      }
-
-      .hero-panel,
-      .content-panel {
-        background: var(--panel);
-        border-left: 4px solid var(--lime);
-        padding: 0.55em 0.7em;
-        text-align: left;
-        backdrop-filter: blur(8px);
-      }
-
-      .hero-panel {
-        display: inline-block;
-        max-width: 78%;
-      }
-
-      .eyebrow {
-        color: var(--lime) !important;
-        font-size: 0.38em !important;
-        font-weight: 700;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-      }
-
-      .hero-panel p {
-        margin: 0.35em 0 0;
-      }
-
-      .split-layout {
-        align-items: center;
-        display: grid;
-        gap: 0.55em;
-        grid-template-columns: 1.05fr 0.95fr;
-        text-align: left;
-      }
-
-      .split-layout ul {
-        list-style: none;
-        margin: 0;
-      }
-
-      .split-layout li {
-        margin: 0.35em 0;
-      }
-
-      .split-layout li i,
-      .team-lines i,
-      .partner-row i {
-        color: var(--lime);
-        margin-right: 0.4em;
-        width: 1.2em;
-      }
-
-      .slide-image {
-        border: 1px solid rgba(210, 250, 104, 0.4);
-        display: block;
-        height: 7.4em;
-        object-fit: cover;
-        width: 100%;
-      }
-
-      .image-caption {
-        color: var(--muted);
-        font-size: 0.36em !important;
-        margin: 0.3em 0 0;
-        text-align: right;
-      }
-
-      .team-lines p,
-      .partner-row p {
-        margin: 0.45em 0;
-      }
-
-      .team-lines strong,
-      .partner-row strong {
-        color: var(--ink);
-      }
-
-      .reveal .progress {
-        color: var(--lime);
-        height: 4px;
-      }
-
-      .reveal .controls {
-        color: var(--lime);
-      }
-
-      @media (max-width: 600px) {
-        .split-layout {
-          grid-template-columns: 1fr;
-        }
-
-        .slide-image {
-          height: 5em;
-        }
-
-        .hero-panel {
-          max-width: 94%;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <section>
-          <div class="hero-panel">
-            <p class="eyebrow"><i class="fa-solid fa-location-dot"></i> São Paulo, Brasil</p>
-            <h1>Tech na Laje</h1>
-            <p>Inovação, Impressão 3D e Cultura Maker em São Paulo</p>
+      <!-- Slide 2 & 3: Founders -->
+      <section>
+        <h2>Quem está na Laje</h2>
+        <div style="display: flex; gap: 40px; justify-content: center;">
+          <div class="team-member">
+            <h3>Ana Clara Cruz Nadim</h3>
+            <ul>
+              <li>Fundadora</li>
+              <li>Bióloga & Médica</li>
+              <li>Apaixonada por jogos, amigos e animais</li>
+            </ul>
           </div>
+          <div class="team-member">
+            <h3>Karel Pita</h3>
+            <ul>
+              <li>Fundador</li>
+              <li>20 Anos de Tecnologia (Ex-Googler)</li>
+              <li>Mestra RPG (prefere bardo)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 4 & 5: Team -->
+      <section>
+        <h2>Quem está na Laje</h2>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+          <div class="team-member">
+            <h3>Lais Kappke</h3>
+            <p>Social Marketing, Letras USP</p>
+          </div>
+          <div class="team-member">
+            <h3>Andreza Cassolatto</h3>
+            <p>Médica Veterinária & Artista</p>
+          </div>
+          <div class="team-member">
+            <h3>Luíza Lacativa</h3>
+            <p>Controller, Finanças Empresariais</p>
+          </div>
+          <div class="team-member">
+            <h3>Carlos Augusto</h3>
+            <p>Ops Lead, L&M e RI</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 6, 7 & 8: Culture -->
+      <section>
+        <section>
+          <h2>Qual é a da Laje?</h2>
+          <h3 class="highlight">Missão</h3>
+          <p>Ser a ponte entre a imaginação e a realidade física, democratizando o acesso à manufatura avançada, para acolher a sensibilidade humana com suporte tecnológico e criativo.</p>
         </section>
         <section>
-          <div class="split-layout">
-            <div class="content-panel">
-              <h2>O Que Fazemos</h2>
-              <ul>
-                <li><i class="fa-solid fa-people-group"></i>Maker Space Híbrido</li>
-                <li><i class="fa-solid fa-cube"></i>Manufatura Aditiva (FDM/Resina) e Laser</li>
-                <li><i class="fa-solid fa-compass-drafting"></i>Consultoria Técnica e Design de Produto</li>
-              </ul>
-            </div>
-            <div>
-              <img class="slide-image" src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Equipamento de fabricação digital em uma oficina">
-              <p class="image-caption">Ideias viram objetos, protótipos e ferramentas.</p>
-            </div>
-          </div>
+          <h2>Qual é a da Laje?</h2>
+          <h3 class="highlight">Visão</h3>
+          <p>Consolidar a Tech na Laje como o hub de inovação mais humano do setor de manufatura aditiva...</p>
         </section>
         <section>
-          <div class="split-layout">
-            <div class="content-panel team-lines">
-              <h2>A Equipe</h2>
-              <p><i class="fa-solid fa-microchip"></i><strong>Karel Alves Pita</strong><br>Tech / Hardware</p>
-              <p><i class="fa-solid fa-lightbulb"></i><strong>Ana Clara Cruz Nadim</strong><br>Co-fundadora</p>
-            </div>
-            <div>
-              <img class="slide-image" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Equipe colaborando em uma mesa de trabalho">
-              <p class="image-caption">Conhecimento compartilhado, projetos em movimento.</p>
-            </div>
-          </div>
+          <h2>Valores</h2>
+          <ul style="list-style: none; display: flex; gap: 30px; justify-content: center; font-size: 1.2em;">
+            <li>💡 Inovação</li>
+            <li>🚪 Acessibilidade</li>
+            <li>🤝 Humanismo</li>
+            <li>❤️ Afeto</li>
+          </ul>
+        </section>
+      </section>
+
+      <!-- Slide 9, 10 & 11: The Problem & Solution -->
+      <section>
+        <section>
+          <h2>Qual a ideia?</h2>
+          <h2><span class="highlight">Ouvir. Entender. Criar Junto.</span></h2>
         </section>
         <section>
-          <div class="split-layout">
-            <div class="content-panel partner-row">
-              <h2>Ecossistema</h2>
-              <p><i class="fa-solid fa-dice"></i><strong>Elo:</strong> Board game original.</p>
-              <p><i class="fa-solid fa-screwdriver-wrench"></i><strong>Open Maker:</strong> Infraestrutura compartilhada.</p>
-              <p><i class="fa-solid fa-handshake"></i><strong>Parcerias:</strong> Projetos com Neurodex e Market4u.</p>
-            </div>
-            <div>
-              <img class="slide-image" src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Peças e tabuleiro de um jogo de mesa">
-              <p class="image-caption">Um ecossistema que conecta criação e comunidade.</p>
-            </div>
-          </div>
+          <h2>Onde aperta o calo?</h2>
+          <ul>
+            <li>Risco de Estoque Parado</li>
+            <li>Time-to-Market</li>
+            <li>Complexidade Logística</li>
+          </ul>
         </section>
-      </div>
+        <section>
+          <h2>A Solução</h2>
+          <ul>
+            <li>Estoque Sem MOQs (Produção On Demand)</li>
+            <li>Do Momento ao Produto em 48 Horas</li>
+            <li>Brindes Oficiais Fora do Padrão</li>
+          </ul>
+        </section>
+      </section>
+
+      <!-- Slide 12, 13 & 14: Execution -->
+      <section>
+        <h2>E como vai ser?</h2>
+        <ul>
+          <li>Equipe de projetos, fulfillment e produção em SP</li>
+          <li>Modelagem e customização In-House (Inclusão/Acessibilidade)</li>
+          <li>Envio Otimizado e processo simplificado</li>
+        </ul>
+        <br><br>
+        <h3 class="highlight">Seja qual for a ideia, conta com a Laje.</h3>
+      </section>
+
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
-    <script>
-      Reveal.initialize({
-        controls: true,
-        progress: true,
-        center: true,
-        hash: true,
-        transition: 'fade',
-        backgroundTransition: 'fade',
-        parallaxBackgroundImage: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=2400&q=85',
-        parallaxBackgroundSize: '2400px 1600px'
-      });
-    </script>
-  </body>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+  <script>
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      center: true,
+      hash: true,
+      transition: 'slide',
+      width: 1280,
+      height: 720,
+      margin: 0.1
+    });
+  </script>
+</body>
 </html>
